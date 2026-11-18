@@ -1,0 +1,53 @@
+{
+  "name": "@bouncelayer/mcp",
+  "version": "1.0.4",
+  "mcpName": "com.bouncelayer/mcp",
+  "description": "Official BounceLayer MCP server for AI agents (Cursor, Claude, Windsurf): check if an email is real before you send, with a plain-English reason. Agents can get their own key.",
+  "type": "module",
+  "bin": {
+    "bouncelayer-mcp": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "homepage": "https://bouncelayer.com/",
+  "bugs": {
+    "url": "https://bouncelayer.com/contact",
+    "email": "support@bouncelayer.com"
+  },
+  "author": "BounceLayer <support@bouncelayer.com> (https://bouncelayer.com/)",
+  "keywords": [
+    "bouncelayer",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "email-verification",
+    "email-validation",
+    "email-verifier",
+    "smtp-verifier",
+    "deliverability",
+    "claude",
+    "cursor",
+    "windsurf",
+    "ai-agent",
+    "bulk-email-verification"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mcp-remote": "^0.1.38"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BounceLayer/bouncelayer-mcp.git"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.bouncelayer/mcp",
+  "title": "BounceLayer Email Verification",
+  "description": "Check if an email address is real before you send, with a plain-English reason for every result.",
+  "repository": {
+    "url": "https://github.com/BounceLayer/bouncelayer-mcp",
+    "source": "github"
+  },
+  "version": "1.0.4",
+  "websiteUrl": "https://bouncelayer.com/ai-agents",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.bouncelayer.com/mcp/",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your BounceLayer API key (starts with bl_live_). Optional: without one, call create_agent_account to get a key with free credits.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bouncelayer/mcp",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BOUNCELAYER_API_KEY",
+          "description": "Your BounceLayer API key (starts with bl_live_). Optional: without one, call create_agent_account to get a key with free credits.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
